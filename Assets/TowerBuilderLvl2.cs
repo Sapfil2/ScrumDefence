@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TowerBuilder : MonoBehaviour
+public class TowerBuilderLvl2 : AbstractTowerBuilder
 {
-    public static TowerBuilder Instance { get; set; }
+    public static TowerBuilderLvl2 Instance { get; private set; }
     public static CollidersEnabler collidersEnabler;
     public GameObject builderMask;
 
@@ -26,10 +26,9 @@ public class TowerBuilder : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
     }
 
-    public void EnableBuilder(PlaceTower placeTower) 
+    public override void EnableBuilder(PlaceTower placeTower) 
     {
         Time.timeScale = 0.1f;
         currentPlaceTower = placeTower;
@@ -37,7 +36,7 @@ public class TowerBuilder : MonoBehaviour
         builderMask.SetActive(true);
     }
 
-    public void TowerChosen(GameObject towerPrefab)
+    public override void TowerChosen(GameObject towerPrefab)
     {
         Time.timeScale = 1.0f;
         currentPlaceTower.Build(towerPrefab);

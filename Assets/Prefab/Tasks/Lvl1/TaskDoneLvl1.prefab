@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ac48947cdb80cf3418ad1ab50bbccce4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8f7ebe972cf415a48894e215ea32b130, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -94,11 +94,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6702552271278063274}
   - component: {fileID: 6702552271278063277}
-  - component: {fileID: 7614692625483917113}
   - component: {fileID: 2308160503784321580}
   m_Layer: 0
-  m_Name: TaskTested
-  m_TagString: Untagged
+  m_Name: TaskDoneLvl1
+  m_TagString: RFT
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,22 +131,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
---- !u!58 &7614692625483917113
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6702552271278063270}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!50 &2308160503784321580
 Rigidbody2D:
   serializedVersion: 4

@@ -40,6 +40,7 @@ public class PathFollow : MonoBehaviour
         {
             if (!UpdateNextPositionVector())
             {
+                Prod.Instance.TaskReachedProd(gameObject);
                 Destroy(gameObject);
             }
         }

@@ -9,6 +9,7 @@ TagManager:
   - NewTask
   - RFT
   - Untested
+  - Done
   layers:
   - Default
   - TransparentFX

@@ -26,7 +26,7 @@ public class PlaceTower : MonoBehaviour
     {
         if (tower == null)
         {
-            TowerBuilder.Instance.EnableBuilder(this);
+            TowerBuilderImplementation.Instance.builderImpl.EnableBuilder(this);
         }
     }
 

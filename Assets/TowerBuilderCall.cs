@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class TowerBuilderCall : MonoBehaviour
 {
-    public static TowerBuilder towerBuilder;
+    public static AbstractTowerBuilder towerBuilder;
 
     public GameObject towerPrefab;
 
     // Start is called before the first frame update
     void Start()
     {
-        towerBuilder = TowerBuilder.Instance;
+        towerBuilder = TowerBuilderImplementation.Instance.builderImpl;
     }
 
     private void OnMouseUp()
